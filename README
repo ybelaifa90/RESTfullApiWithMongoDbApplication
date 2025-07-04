@@ -1,0 +1,27 @@
+## Project Overview
+This project is to demonstrate CRUD operations on a Book using springboot and Mongodb
+
+
+## Prerequisites
+Java 21.0.6
+Maven 3.9.9
+Docker 28.1.1
+Spring Boot 3.5.3
+
+## Build the app and run tests:
+
+mvn clean package
+
+## Run the app:
+
+mvn spring-boot:run
+
+
+## Running MongoDB with Docker for this project:
+
+docker run -d --name books-mongo -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=secret mongo:7
+
+
+## OpenAPI Documentation
+After running the app, access the API documentation and interact with the App at:
+http://localhost:8080/swagger-ui/index.html
